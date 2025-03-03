@@ -10,13 +10,16 @@ import Billedegalleri from "../components/Billedegalleri.astro";
 
 <MainLayout title="Titel">
   <section class="hero h-screen w-full relative">
-    <div class="relative w-full max-w-md">
-      <img src="/image1.png" alt="Description" class="w-full h-auto rounded-lg" />
+    <div class="relative w-screen h-screen">
+      <img src="/image2.png" alt="Full Screen Image" class="object-cover w-full h-full" />
+
       <div class="absolute inset-0 flex items-center justify-center">
-        <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold text-white">Fortællingen om110 film</h1>
+        <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold text-white">Fortællingen om 110 film</h1>
       </div>
     </div>
   </section>
+
+  
 
   <Billedegalleri />
 
@@ -52,10 +55,6 @@ import Billedegalleri from "../components/Billedegalleri.astro";
 
     <img src="/image4.png" alt="Image 4" />
   </div>
-
-  
-
-
 
   <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
     <h2 class="text-2xl font-bold mb-4 text-center">Tilmeld dig vores nyhedsbrev!</h2>
