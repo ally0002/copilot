@@ -5,6 +5,7 @@ import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 import NewsletterForm from "../components/NewsletterForm.astro";
+import Billedegalleri from "../components/Billedegalleri.astro";
 ---
 
 <MainLayout title="Titel">
@@ -17,23 +18,14 @@ import NewsletterForm from "../components/NewsletterForm.astro";
     </div>
   </section>
 
-  <section class="grid sm:grid-cols-3 lg:grid-cols-6 gap-4 justify-center items-center">
-    <div class="flex items-center justify-center border-red-800 border-2">
-      <img src="/image2.png" alt="Image 2" />
-    </div>
-    <div class="flex items-center justify-center border-red-800 border-2">
-      <img src="/image3.png" alt="Image 3" />
-    </div>
-    <div class="flex items-center justify-center border-red-800 border-2">
-      <img src="/image4.png" alt="Image 4" />
-    </div>
-  </section>
+  <Billedegalleri />
 
   <section class="grid sm:grid-cols-1 lg:grid-cols-1 gap-4 mt-4 p-50">
     <div>
       <h1 class="font-bold text-3xl text-center text-red-800">Oprindelse</h1>
       <p class="Prose">George Eastman, en pioner inden for fotografering, er mest kendt for at have grundlagt Kodak, en virksomhed der revolutionerede den måde, folk tog billeder på. I 1972 introducerede Kodak 110 filmformatet, som blev designet til at være brugervenligt for amatører. Dette format gjorde det muligt for almindelige mennesker at tage billeder uden at skulle forstå de mere komplekse aspekter af fotografi.</p>
     </div>
+
     <div>
       <h1 class="font-bold text-3xl text-center text-red-800">Popularitet</h1>
       <p class="Prose">110 film var særlig populært i 1970’erne og 1990’erne, især i USA. Det lille, kompakte design af kameraerne, der brugte 110 film, gjorde dem ideelle til at have med på farten. Fotografer kunne nemt opbevare dem i lommen, hvilket gjorde det muligt at tage spontane billeder uden besvær.</p>
@@ -52,31 +44,28 @@ import NewsletterForm from "../components/NewsletterForm.astro";
     </div>
   </section>
 
+  <div class="flex items-center justify-center border-red-800 border-2">
+    <img src="/image4.png" alt="Image 4" />
+    <img src="/image4.png" alt="Image 4" />
+    <img src="/image4.png" alt="Image 4" />
+    <img src="/image4.png" alt="Image 4" />
+
+    <img src="/image4.png" alt="Image 4" />
+  </div>
+
   
-  <article>
-    <h2>Tilmeld dig vores nyhedsbrev</h2>
-    <form action="/subscribe" method="post">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-      <Button type="submit">Tilmeld</Button>
-    </form>
-  </article>
 
-  <article>
-    <h2>Seneste nyheder</h2>
-    <ul>
-      <li><Link href="/nyheder/1">Nyhed 1</Link></li>
-      <li><Link href="/nyheder/2">Nyhed 2</Link></li>
-      <li><Link href="/nyheder/3">Nyhed 3</Link></li>
-    </ul>
-  </article>
 
-  <article>
-    <h2>Tilmeld dig vores nyhedsbrev</h2>
-    <form action="/subscribe" method="post">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-      <Button type="submit">Tilmeld</Button>
+
+  <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
+    <h2 class="text-2xl font-bold mb-4 text-center">Tilmeld dig vores nyhedsbrev!</h2>
+    <p class="mb-6 text-center text-gray-600">Få de seneste opdateringer og tilbud direkte i din indbakke.</p>
+    <form action="#" method="POST">
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-medium text-gray-700">E-mail adresse</label>
+        <input type="email" id="email" name="email" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="din.email@eksempel.com" />
+      </div>
+      <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-500">Tilmeld</button>
     </form>
-  </article>
+  </div>
 </MainLayout>
