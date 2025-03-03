@@ -19,11 +19,9 @@ import Billedegalleri from "../components/Billedegalleri.astro";
     </div>
   </section>
 
-  
-
   <Billedegalleri />
 
-  <section class="grid sm:grid-cols-1 lg:grid-cols-1 gap-4 mt-4 p-50">
+  <section class="max-w-xl mx-auto">
     <div>
       <h1 class="font-bold text-3xl text-center text-red-800">Oprindelse</h1>
       <p class="Prose">George Eastman, en pioner inden for fotografering, er mest kendt for at have grundlagt Kodak, en virksomhed der revolutionerede den måde, folk tog billeder på. I 1972 introducerede Kodak 110 filmformatet, som blev designet til at være brugervenligt for amatører. Dette format gjorde det muligt for almindelige mennesker at tage billeder uden at skulle forstå de mere komplekse aspekter af fotografi.</p>
@@ -37,6 +35,11 @@ import Billedegalleri from "../components/Billedegalleri.astro";
       <h1 class="font-bold text-3xl text-center text-red-800">Markedsføring</h1>
       <p class="Prose">Kodak markedsførte 110 film med hjælp fra kendte skuespillere, hvilket bidrog til at øge populariteten af både filmformatet og de tilhørende kameraer. Denne form for reklame appellerede til forbrugerne og gjorde det til et attraktivt valg for dem, der ønskede at dokumentere deres liv gennem billeder.</p>
     </div>
+
+    <section class="max-w-xl mx-auto grid grid-cols-2">
+      <img src="/image1.png" alt="Image 4" />
+      <img src="/image3.png" alt="Image 4" />
+    </section>
     <div>
       <h1 class="font-bold text-3xl text-center text-red-800">I dag</h1>
       <p class="Prose">I dag bliver 110 film stadig produceret af virksomheder som Kodak og Fujifilm, hvilket vidner om formatets vedholdende appel. I takt med den stigende interesse for analog fotografi begyndte kameraerne til 110 film at få en genopblussen i 2012. Den moderne teknologi, som ASA (den internationale standard for filmsensitivitet), har også gjort det lettere for fotografer at tage billeder under forskellige lysforhold, hvilket forbedrer kvaliteten af billederne.</p>
@@ -56,7 +59,7 @@ import Billedegalleri from "../components/Billedegalleri.astro";
     <img src="/image4.png" alt="Image 4" />
   </div>
 
-  <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
+  <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full max-w-xl mx-auto">
     <h2 class="text-2xl font-bold mb-4 text-center">Tilmeld dig vores nyhedsbrev!</h2>
     <p class="mb-6 text-center text-gray-600">Få de seneste opdateringer og tilbud direkte i din indbakke.</p>
     <form action="#" method="POST">
