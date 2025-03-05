@@ -4,7 +4,6 @@ import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
-import NewsletterForm from "../components/NewsletterForm.astro";
 import Billedegalleri from "../components/Billedegalleri.astro";
 ---
 
@@ -18,7 +17,7 @@ import Billedegalleri from "../components/Billedegalleri.astro";
   </section>
   <Billedegalleri />
 
-  <section class="max-w-xl mx-auto">
+  <section class="max-w-xl mx-auto scroll-smooth">
     <div>
       <h1 class="font-bold text-3xl text-center text-red-800">Oprindelse</h1>
       <p class="Prose">George Eastman, en pioner inden for fotografering, er mest kendt for at have grundlagt Kodak, en virksomhed der revolutionerede den måde, folk tog billeder på. I 1972 introducerede Kodak 110 filmformatet, som blev designet til at være brugervenligt for amatører. Dette format gjorde det muligt for almindelige mennesker at tage billeder uden at skulle forstå de mere komplekse aspekter af fotografi.</p>
@@ -35,12 +34,13 @@ import Billedegalleri from "../components/Billedegalleri.astro";
       <img src="/110film-6.jpg" alt="Image 3" class="object-cover w-full h-48" />
       <img src="/110film-7.jpg" alt="Image 4" class="object-cover w-full h-48" />
     </section>
+  
     <div>
       <h1 class="font-bold text-3xl text-center text-red-800">Markedsføring</h1>
       <p class="Prose">Kodak markedsførte 110 film med hjælp fra kendte skuespillere, hvilket bidrog til at øge populariteten af både filmformatet og de tilhørende kameraer. Denne form for reklame appellerede til forbrugerne og gjorde det til et attraktivt valg for dem, der ønskede at dokumentere deres liv gennem billeder.</p>
     </div>
 
-    <section class="max-w-xl mx-auto grid grid-cols-2 gap-4 gap-4 my-8">
+    <section class="max-w-xl mx-auto grid grid-cols-2 gap-4 my-8">
       <img src="/image1.png" alt="Image 4" class="object-cover w-full h-48" />
       <img src="/image3.png" alt="Image 4" class="object-cover w-full h-48" />
     </section>
@@ -55,13 +55,13 @@ import Billedegalleri from "../components/Billedegalleri.astro";
     </div>
   </section>
 
-  <section class="max-w-xl mx-auto grid grid-cols-3 gap-4 gap-4 my-8">
+  <section class="max-w-xl mx-auto grid grid-cols-3 gap-4 my-8">
     <img src="/110film-1.jpg" alt="Image 5" class="object-cover w-full h-48" />
     <img src="/110film-5.jpg" alt="Image 6" class="object-cover w-full h-48" />
     <img src="/110film-3.jpg" alt="Image 7" class="object-cover w-full h-48" />
   </section>
 
-  <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full max-w-xl mx-auto gap-4 my-8">
+  <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full mx-auto gap-4 my-8">
     <h2 class="text-2xl font-bold mb-4 text-center">Tilmeld dig vores nyhedsbrev!</h2>
     <p class="mb-6 text-center text-gray-600">Få de seneste opdateringer og tilbud direkte i din indbakke.</p>
     <form action="#" method="POST">
@@ -73,3 +73,4 @@ import Billedegalleri from "../components/Billedegalleri.astro";
     </form>
   </div>
 </MainLayout>
+
